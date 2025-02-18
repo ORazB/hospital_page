@@ -29,16 +29,32 @@
 
   <section id="hero" class="hero container mt-12">
     <div class="mx-auto w-[1250px]">
-      <div class="hero__wrapper grid grid-cols-2">
-        <div class="hero__content">
-          <div class="hero__text">
-            <h1 class="text-[4rem] font-semibold">We Care About You</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam nam ea quidem et nulla temporibus</p>
+      <div class="hero__wrapper grid grid-cols-2 gap-10">
+        <div class="hero__content flex flex-col gap-5 py-10">
+          <div class="hero__text grid gap-3">
+            <h1 class="text-[4.5rem] leading-[5rem] font-semibold text-(--text-color)">We Really Care About You</h1>
+            <p class="text-justify text-(--text-color)">At our hospital, your health and well-being are our top priorities. With expert medical care, state-of-the-art technology, and a compassionate team, we are dedicated to providing the best treatments and a comforting experience for every patient.</p>
+          </div>
+
+          <div class="hero__buttons grid grid-cols-2 gap-5 w-[90%]">
+            <button class="py-4 px-5 bg-(--primary-color) text-white text-lg">Book an Appointment</button>
+            <button class="py-4 px-5 border-(--primary-color) border-2 text-(--text-color) text-lg">Find a Doctor</button>
+          </div>
+
+          <div class="hero__info grid grid-cols-2 gap-5 mt-10">
+            <div class="hero__info__text grid gap-2">
+              <h3 class="font-bold text-(--text-color)">Technology</h3>
+              <p class="text-(--text-secondary-color) text-sm">Leveraging advanced technology for accurate care</p>
+            </div>
+            <div class="hero__info__text grid gap-2">
+              <h3 class="font-bold text-(--text-color)">Compassion</h3>
+              <p class="text-(--text-secondary-color) text-sm">Providing care with empathy and understanding</p>
+            </div>
           </div>
         </div>
 
-        <div class="hero__image">
-          <img class="h-[525px] w-[85%] object-cover" src="./assets/hero-image.webp" alt="Hero Image">
+        <div class="hero__image h-[600px] w-[90%]">
+          <img class="h-full w-full object-cover rounded-xl" src="./assets/hero-image.webp" alt="Hero Image">
         </div>
 
       </div>
