@@ -117,13 +117,15 @@
 
   <section id="value" class="value w-full mt-12 md:mt-24">
     <div class="container mx-auto px-4">
-
-      <div class="value__title">
+      <div class="value__title grid justify-center mb-8 md:mb-12">
         <h1 class="text-center text-5xl font-bold mb-4">Why <span style="color: var(--primary-color);">Choose</span> Us?</h1>
         <p class="text-base text-center tracking-wide text-(--text-secondary-color)">We provide top quality customer services. We have received an Award in the sector. <br> Our experienced team of doctors and staff are dedicated to providing the best healthcare services to our patients.</p>
       </div>
-
-      <div class="value__wrapper grid grid-cols-2 mt-12">
+      
+      <div class="value__wrapper gap-6 md:gap-28 grid grid-cols-1 md:grid-cols-3 place-items-center mx-auto mt-8 md:mt-12">
+        <div class="value__content p-5 py-15 rounded bg-(--secondary-color) grid place-items-center gap-5">
+          <i class='bx bxs-user text-5xl bg-white text-(--primary-color) p-4 rounded-full'></i>
+          <h1 class="text-[1.1rem] font-semibold"><span style="color: var(--primary-color)">Quantifield</span> Doctors</h1>
 
         <div class="value__info grid gap-3">
           
@@ -170,7 +172,7 @@
         <h1 class="text-center text-5xl font-bold mb-4">When <span style="color: var(--primary-color);">Experience</span> Meets Kindness</h1>
         <p class="text-base text-center tracking-wide text-(--text-secondary-color)">We provide top quality customer services. We have received an Award in the sector. <br> Our experienced team of doctors and staff are dedicated to providing the best healthcare services to our patients.</p>
       </div>
-
+      
       <div class="provide__wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         <div class="provide__card grid bg-white rounded-lg relative">
           <img src="./assets/rehab_1.jpg" class="rounded-t-lg rounded-b-lg h-[400px] md:h-[600px] object-cover" style="object-position: -7rem;" alt="provide__img">
@@ -191,7 +193,7 @@
             <p class="z-50 text-(--text-secondary-color) font-semibold tracking-wide">Oncology</p>
             <h1 class="z-50 text-2xl font-normal">10K+ Cancer Treatments and Recovery Cases per Year</h1>
             <p class="z-50 font-light tracking-wide">Every year, Horizon Hospitals provides over 10,000 cancer treatments to support recovery and improve quality of life.</p>
-
+            
             <button class="justify-self-start my-2 border-1 p-2 px-4 rounded-full text-(--text-color) z-[100] transition-all hover:bg-(--primary-color) hover:text-white hover:border-(--primary-color) cursor-pointer">Learn More</button>
           </div>
         </div>
@@ -210,11 +212,56 @@
       </div>
     </div>
   </section>
+    
+   <section class="blog mt-12 md:mt-24 w-full" id="blog">
+    <div class="container mx-auto px-4 grid place-items-center">
+      <div class="value__title grid justify-center mb-8 md:mb-12">
+        <h1 class="text-center text-5xl font-bold mb-4">Explore Our Latest <span style="color: var(--primary-color);">Health</span> Insights</h1>
+        <p class="text-base text-center tracking-wide text-(--text-secondary-color)">Explore our latest articles, news, and expert insights covering healthcare advancements, patient care,<br> and wellness tips to keep you informed, inspired, and truly empowered.</p>
+      </div>
+      
+      <div class="blog__wrapper grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div class="blog__content rounded-lg group overflow-hidden cursor-pointer">
+          <div class="blog__image overflow-hidden">
+            <img src="./assets/blog-1.jpg" class="h-[300px] object-cover w-full rounded-t-lg transform transition duration-300 group-hover:scale-110" alt="">
+          </div>
 
+          <div class="blog__text p-4 border-1 border-(--secondary-color) rounded-b-lg grid gap-6">
+            <h3 class="text-(--text-color) text-2xl font-semibold">The Importance of Preventative Care: Tips for a Healthier Life</h3>
+            <p class="text-base text-gray-600">June 18, 2024 - 13 min read</p>
+          </div>
+        </div>
+
+        <div class="blog__content rounded-lg group overflow-hidden cursor-pointer">
+          <div class="blog__image overflow-hidden">
+            <img src="./assets/blog-1.jpg" class="h-[300px] object-cover w-full rounded-t-lg transform transition duration-300 group-hover:scale-110" alt="">
+          </div>
+
+          <div class="blog__text p-4 border-1 border-(--secondary-color) rounded-b-lg grid gap-6">
+            <h3 class="text-(--text-color) text-2xl font-semibold">The Importance of Preventative Care: Tips for a Healthier Life</h3>
+            <p class="text-base text-gray-600">June 18, 2024 - 13 min read</p>
+          </div>
+        </div>
+
+        <div class="blog__content rounded-lg group overflow-hidden cursor-pointer">
+          <div class="blog__image overflow-hidden">
+            <img src="./assets/blog-1.jpg" class="h-[300px] object-cover w-full rounded-t-lg transform transition duration-300 group-hover:scale-110" alt="">
+          </div>
+
+          <div class="blog__text p-4 border-1 border-(--secondary-color) rounded-b-lg grid gap-6">
+            <h3 class="text-(--text-color) text-2xl font-semibold">The Importance of Preventative Care: Tips for a Healthier Life</h3>
+            <p class="text-base text-gray-600">June 18, 2024 - 13 min read</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="mt-8 p-3 px-7 rounded-full bg-(--primary-color) text-white cursor-pointer">Load More</button>
+    </div>
+  </section>
   
   <section id="story" class="relative story mt-12 md:mt-24 bg-[url(./assets/story-image.jpg)] bg-no-repeat bg-cover h-[500px] md:h-[625px]">
     <div class="gradient z-0 blur-sm"></div>
-
+    
     <div class="story__text p-6 md:p-10 py-10 md:py-15 grid items-center h-full relative">
 
 
