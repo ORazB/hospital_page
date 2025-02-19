@@ -29,20 +29,22 @@
 
   <header id="header" class="header shadow-lg sticky top-0 z-50 w-full bg-white">
     <nav class="mx-auto container grid grid-cols-3 py-3">
+  <header id="header" class="header container shadow-lg sticky top-0 z-[1000] bg-white">
+    <nav class="mx-auto max-w-[1250px] grid grid-cols-3 py-3">
       <div class="nav__logo flex items-center">
-        <img src="./assets/logos.png" alt="nav__logo" class="w-15 h-auto">
+        <img src="./assets/logos.png" alt="nav__logo" class="w-10 mr-3 h-auto bg-(--primary-color) rounded-full">
         <h1 class="text-xl font-semibold tracking-wide">Horizon Hospital</h1>
       </div>
 
       <div class="nav__link flex justify-center items-center gap-10">
         <ul><a href="#" class="font-semibold tracking-wide">Home</a></ul>
-        <ul><a href="#value" class="font-semibold tracking-wide">Why Us</a></ul>
+        <ul><a href="#testimonial" class="font-semibold tracking-wide">Why Us</a></ul>
         <ul><a href="#story" class="font-semibold tracking-wide">Story</a></ul>
         <ul><a href="#" class="font-semibold tracking-wide">Blog</a></ul>
       </div>
 
       <div class="nav__button justify-self-end">
-        <button class="py-4 px-5 bg-(--primary-color) text-white text-lg">Book an Appointment</button>
+        <button class="py-3 px-5 bg-(--primary-color) text-white text-normal mt-1 rounded">Book Now</button>
       </div>
     </nav>
   </header>
@@ -63,7 +65,7 @@
 
           <div class="hero__info grid grid-cols-2 gap-5 mt-10">
             <div class="hero__info__text grid gap-2">
-              <h3 class="font-bold text-(--text-color)">Technology</h3>
+              <h3 class="font-bold text-(--text-color)">Technology </h3>
               <p class="text-(--text-secondary-color) text-sm">Leveraging advanced technology for accurate care</p>
             </div>
             <div class="hero__info__text grid gap-2">
@@ -73,8 +75,19 @@
           </div>
         </div>
 
-        <div class="hero__image h-[600px]">
+        <div class="hero__image h-[600px] relative">
           <img class="h-full w-full object-cover rounded-xl" src="./assets/hero-image.webp" alt="Hero Image">
+
+          <div class="hero__review grid gap-0 absolute bottom-20 right-[-20px] bg-(--primary-color) p-3 px-8 rounded-sm">
+            <h1 class="text-white font-semibold">TrustPilot</h1>
+            <div class="hero__stars">
+              <i class='bx bxs-star text-[#f7c948]'></i>  
+              <i class='bx bxs-star text-[#f7c948]'></i>
+              <i class='bx bxs-star text-[#f7c948]'></i>
+              <i class='bx bxs-star text-[#f7c948]'></i>
+              <i class='bx bxs-star text-[#f7c948]'></i>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -105,8 +118,8 @@
   </section>
 
 
-  <section id="value" class="value mt-24">
-    <div class="mx-auto container max-w-[1250px]">
+  <section id="value" class="value container mt-24">
+    <div class="mx-auto max-w-[1250px]">
       <div class="value__title grid justify-center mb-5">
         <h1 class="text-center text-5xl font-bold mb-4">Why <span style="color: var(--primary-color);">Choose</span> Us?</h1>
         <p class="text-base text-center tracking-wide text-(--text-secondary-color)">We provide top quality customer services. We have received an Award in the sector. <br> Our experienced team of doctors and staff are dedicated to providing the best healthcare services to our patients.</p>
@@ -147,11 +160,41 @@
     </div>
   </section>
 
-  <section class="provide mt-24 w-full" id="provide">
-    <div class="mx-auto container">
+  <section class="provide mt-24 container" id="provide">
+    <div class="mx-auto max-w-[1250px]">
       <div class="value__title grid justify-center mb-5">
         <h1 class="text-center text-5xl font-bold mb-4">When <span style="color: var(--primary-color);">Experience</span> Meets Kindness</h1>
         <p class="text-base text-center tracking-wide text-(--text-secondary-color)">We provide top quality customer services. We have received an Award in the sector. <br> Our experienced team of doctors and staff are dedicated to providing the best healthcare services to our patients.</p>
+      </div>
+
+      <div class="provide__wrapper grid grid-cols-3 gap-8">
+        <div class="provide__card grid bg-white rounded-lg relative">
+          <img src="./assets/rehab_1.jpg" class="rounded-t-lg rounded-b-lg h-[525px] object-cover" style="object-position: -7rem;" alt="provide__img">
+          <div class="absolute bottom-0 rounded-b-lg provide__description grid gap-3 p-4">
+            <div class="provide__blur rounded-b-lg absolute h-full w-full z-0" style="background-color: #f4f6fdf5;"></div>
+            <p class="z-50 text-(--text-secondary-color) font-semibold tracking-wide">Orthopedics</p>
+            <h1 class="z-50 text-2xl font-normal">60K+ Bone Rehabilitation and Trauma Cases per Year</h1>
+            <p class="z-50 font-light tracking-wide">Every year, Horizon Hospitals handles over 60,000 bone rehabilitation cases to restore body function.</p>
+          </div>
+        </div>
+        <div class="provide__card grid bg-white rounded-lg relative">
+          <img src="./assets/cancer_!.jpg" class="rounded-t-lg rounded-b-lg h-[525px] object-cover" alt="provide__img">
+          <div class="absolute bottom-0 rounded-b-lg provide__description grid gap-3 p-4">
+            <div class="provide__blur rounded-b-lg absolute h-full w-full z-0" style="background-color: #f4f6fdf5;"></div>
+            <p class="z-50 text-(--text-secondary-color) font-semibold tracking-wide">Oncology</p>
+            <h1 class="z-50 text-2xl font-normal">10K+ Cancer Treatments and Recovery Cases per Year</h1>
+            <p class="z-50 font-light tracking-wide">Every year, Horizon Hospitals provides over 10,000 cancer treatments to support recovery and improve quality of life.</p>
+          </div>
+        </div>
+        <div class="provide__card grid bg-white rounded-lg relative">
+          <img src="./assets/baby_1.jpg" class="rounded-t-lg rounded-b-lg h-[525px] object-cover" alt="provide__img">
+          <div class="absolute bottom-0 rounded-b-lg provide__description grid gap-3 p-4">
+            <div class="provide__blur rounded-b-lg absolute h-full w-full z-0" style="background-color: #f4f6fdf5;"></div>
+            <p class="z-50 text-(--text-secondary-color) font-semibold tracking-wide">Maternal & Infant Care</p>
+            <h1 class="z-50 text-2xl font-normal">40K+ Postnatal Care Cases per Year</h1>
+            <p class="z-50 font-light tracking-wide line-clamp-3">Every year, Horizon Hospitals supports over 40,000 mothers and babies with expert postnatal care to ensure a healthy recovery and well-being.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
