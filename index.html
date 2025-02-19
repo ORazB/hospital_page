@@ -127,24 +127,28 @@
     </div>
   </section>
 
-  <section id="story" class="story container mt-12 bg-[url(./assets/story-image.jpg)] bg-no-repeat bg-cover">
+  <section id="story" class="relative story container mt-12 bg-[url(./assets/story-image.jpg)] bg-no-repeat bg-cover h-[625px]">
+    <div class="gradient z-0 blur-sm"></div>
 
-    <div class="story__text p-10" style="background: linear-gradient(to right, #000 0%, #ababab 100%);">
+    <div class="story__text p-10 py-15 grid items-center h-full relative">
 
-      <h5 class="text-(--text-secondary-color)">Story #WithHorizon</h5>
-      <h1 class="text-white text-4xl">Hendra's Struggle</h1>
-      <h1 class="text-white text-4xl">Against Hereditary</h1>
-      <h1 class="text-white text-4xl">Kidney Disease</h1>
 
-      <div class="doctor__profile">
-        <img class="w-24 h-24" src="assets/doctor-img.png" alt="doctor-profile">
-        <h5>Prof. Dr. Endang Susalit, SpPD-KGH</h5>
-        <p>Specialist in Internal Medicine-Consultant in Kidney and Hypertension</p>
+      <h5 class="text-[#e3e3e3] font-semibold tracking-wide mb-2">Story #WithHorizon</h5>
+      <h1 class="text-white text-5xl tracking-wider mb-1">Hendra's Struggle</h1>
+      <h1 class="text-white text-5xl tracking-wider mb-1">Against Hereditary</h1>
+      <h1 class="text-white text-5xl tracking-wider mb-4">Kidney Disease</h1>
+
+      <div class="doctor__profile flex items-center mt-3">
+        <img class="w-12 h-12 bg-white rounded-full" src="assets/doctor-img.png" alt="doctor-profile">
+        <div class="doctor__text mx-3 text-white">
+          <h5 class="font-semibold text-lg">Prof. Dr. Endang Susalit, SpPD-KGH</h5>
+          <p class="font-extralight text-sm">Specialist in Internal Medicine - Consultant in Kidney and Hypertension</p>
+        </div>
       </div>
 
-      <p>This disease was previously experienced by Hendra Johari (45). After experiencing a decline in kidney function due to polycystic kidney disease, he decided to undergo a kidney transplant at Siloam Hospitals Asri.</p>
+      <p class="w-2/5 my-6 text-white">This disease was previously experienced by Hendra Johari (45). After experiencing a decline in kidney function due to polycystic kidney disease, he decided to undergo a kidney transplant at Siloam Hospitals Asri.</p>
 
-      <div class="story__cta">
+      <div class="story__cta text-white my-10 grid gap-3">
         <p>Read More <i class='bx bx-right-arrow-alt'></i></p>
         <p>View All Stories <i class='bx bx-right-arrow-alt'></i></p>
       </div>
