@@ -17,3 +17,12 @@
   height: 100%;
   background-color: rgba(15, 15, 15, 0.379);
 }
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 0.25rem; /* Adjust as needed */
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--primary-color) !important;
+}
