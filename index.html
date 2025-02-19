@@ -25,7 +25,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
-<body>
+<body class="overflow-hidden">
 
   <header class="w-full shadow-lg sticky top-0 z-[1000] bg-white">
     <nav class="container mx-auto grid grid-cols-3 py-3">
@@ -115,48 +115,54 @@
     </div>
   </section>
 
-
   <section id="value" class="value w-full mt-12 md:mt-24">
-    <div class="container mx-auto px-4">
-      <div class="value__title grid justify-center mb-8 md:mb-12">
+    <div class="container grid place-items-center mx-auto px-4">
+
+      <div class="value__title">
         <h1 class="text-center text-5xl font-bold mb-4">Why <span style="color: var(--primary-color);">Choose</span> Us?</h1>
         <p class="text-base text-center tracking-wide text-(--text-secondary-color)">We provide top quality customer services. We have received an Award in the sector. <br> Our experienced team of doctors and staff are dedicated to providing the best healthcare services to our patients.</p>
       </div>
 
-      <div class="value__wrapper gap-6 md:gap-28 grid grid-cols-1 md:grid-cols-3 place-items-center mx-auto mt-8 md:mt-12">
-        <div class="value__content p-5 py-15 rounded bg-(--secondary-color) grid place-items-center gap-5">
-          <i class='bx bxs-user text-5xl bg-white text-(--primary-color) p-4 rounded-full'></i>
-          <h1 class="text-[1.1rem] font-semibold"><span style="color: var(--primary-color)">Quantifield</span> Doctors</h1>
+      <div class="value__wrapper grid grid-cols-2 mt-12 gap-10">
 
-          <p class="text-sm text-center mb-3 text-(--text-secondary-color) font-medium">We provide top quality customer serives. We have qualified doctors in 15+ categories</p>
-
-          <button class="cursor-pointer"><i class='bx bx-right-arrow-alt text-(--primary-color) text-lg rounded-full bg-white p-2'></i></button>
+        <div class="value__info grid gap-3">
+          
+          <div class="value__content flex gap-3">
+            <h5><i class='bx bx-user text-5xl mr-2 text-(--primary-color) p-3 rounded-full bg-white border-3 shadow-md border-(--primary-color)'></i></h5>
+            <div class="value__text">
+              <h1 class="font-bold tracking-wider text-2xl mb-3">Quantified <span class="text-(--primary-color)">Doctors</span></h1>
+              <p class="font-normal text-gray-500 text-xl">Our expert doctors specialize in 15+ medical fields, ensuring top-quality care for every patient.</p>
+            </div>
+          </div>
+          
+          <div class="value__content flex gap-3">
+            <h5><i class='bx bx-time text-5xl mr-2 text-(--primary-color) p-3 rounded-full bg-white border-3 shadow-md border-(--primary-color)'></i></h5>
+            <div class="value__text">
+              <h1 class="font-bold tracking-wider text-2xl mb-3">24 Hours <span class="text-(--primary-color)">Services</span></h1>
+              <p class="font-normal text-gray-500 text-xl">We provide reliable medical support around the clock, so help is always available when you need it.</p>
+            </div>
+          </div>
+          
+          <div class="value__content flex gap-3">
+            <h5><i class='bx bxs-bell-ring text-5xl mr-2 text-(--primary-color) p-3 rounded-full bg-white border-3 shadow-md border-(--primary-color)'></i></h5>
+            <div class="value__text">
+              <h1 class="font-bold tracking-wider text-2xl mb-3">Need <span class="text-(--primary-color)">Emergency</span></h1>
+              <p class="font-normal text-gray-500 text-xl">In urgent situations, our team responds quickly to deliver immediate medical attention and support.</p>
+            </div>
+          </div>
+          
 
         </div>
 
-        <div class="value__content p-12 py-16 rounded bg-(--primary-color) grid place-items-center gap-5">
-          <i class='bx bxs-time text-5xl bg-white text-(--primary-color) p-4 rounded-full'></i>
-          <h1 class="text-[1.1rem] font-semibold text-white">24 Hours services</h1>
-
-          <p class="text-sm text-center mb-3 text-white font-medium">We provide top quality customer serives. We have qualified doctors in 15+ categories</p>
-
-          <button class="cursor-pointer"><i class='bx bx-right-arrow-alt text-(--primary-color) text-lg rounded-full bg-white p-2'></i></button>
-
-        </div>
-
-        <div class="value__content p-5 py-15 rounded bg-(--secondary-color) grid place-items-center gap-5">
-          <i class='bx bxs-bell-ring text-5xl bg-white text-(--primary-color) p-4 rounded-full'></i>
-          <h1 class="text-[1.1rem] font-semibold"><span style="color: var(--primary-color)">Need</span> Emergency</h1>
-
-          <p class="text-sm text-center mb-3 text-(--text-secondary-color) font-medium">We provide top quality customer serives. We have qualified doctors in 15+ categories</p>
-
-          <button class="cursor-pointer"><i class='bx bx-right-arrow-alt text-(--primary-color) text-lg rounded-full bg-white p-2'></i></button>
-
+        <div class="value__images">
+          <img src="https://img.freepik.com/premium-photo/stock-photohappy-diversity-medical-team-smile-confident-health-care-concept-ar-32-style-raw-j_343960-106297.jpg?ga=GA1.1.439287660.1739927147&semt=ais_hybrid" class="rounded-lg w-full" alt="value__images">
         </div>
 
       </div>
+
+      <!-- <button class="mt-8 border-1 py-3 px-7 rounded-full text-white bg-(--primary-color) cursor-pointer">Book Now</button> -->
     </div>
-  </section>
+  </section>
 
   <section class="provide mt-12 md:mt-24 w-full" id="provide">
     <div class="container mx-auto px-4 grid place-items-center">
@@ -278,8 +284,10 @@
     </div>
   </section>
   
-  <section id="story" class="relative story mt-12 md:mt-24 bg-[url(./assets/story-image.jpg)] bg-no-repeat bg-cover h-[500px] md:h-[625px]">
-    <div class="gradient z-0 blur-sm"></div>
+  <section id="story" class="relative story mt-12 md:mt-24">
+
+    <div class="container mx-auto bg-[url(./assets/story-image.jpg)] bg-no-repeat bg-cover h-[500px] md:h-[625px]">
+      <div class="gradient z-0 blur-sm"></div>
     
     <div class="story__text p-6 md:p-10 py-10 md:py-15 grid items-center h-full relative">
 
@@ -304,9 +312,9 @@
         <p>View All Stories <i class='bx bx-right-arrow-alt'></i></p>
       </div>
     </div>
+    </div>
 
   </section>
-
 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 
