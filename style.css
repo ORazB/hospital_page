@@ -27,6 +27,14 @@
   background-color: var(--primary-color) !important;
 }
 
+.story__text__container {
+  background-color: #2a2a2a48;
+  height: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+}
+
 /* Header */
 #header {
   width: 100%;
@@ -121,4 +129,159 @@
   color: var(--color-white);
   background-color: var(--color-primary);
   border-color: transparent;
+}
+
+/* Footer */
+footer * {
+  color: var(--text-color);
+}
+
+footer .container {
+  border-top: 1px solid #a8a8a8;
+  padding: 0 1rem;
+  padding-top: 1.5rem;
+}
+
+.footer__img {
+  margin-bottom: 0.5rem;
+}
+
+footer .footer__img img {
+  object-fit: contain;
+}
+
+.footer__social {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer__social a {
+  font-size: 1.25rem;
+}
+
+.footer__social a i {
+  color: #a8a8a8 !important;
+  transition: all 0.4s ease;
+}
+
+.footer__social a i:hover {
+  color: var(--primary-color) !important;
+}
+
+footer .list-unstyled li a {
+  color: #a8a8a8;
+  transition: all 0.4s ease;
+}
+
+footer .list-unstyled li a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+footer span {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    background-position-y: 0;
+  }
+
+  .hero .container {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+  }
+
+  .testimonial {
+    margin-top: 3rem;
+  }
+
+  .text__container h1 {
+    font-size: 4rem;
+  }
+
+  .text__container h3 {
+    font-size: 1.25rem;
+    max-width: 85%;
+  }
+
+  .steps__container {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero .container {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+  }
+
+  .testimonial {
+    margin-top: 4rem;
+  }
+
+  .text__container h1 {
+    font-size: 3.5rem;
+  }
+
+  .text__container h3 {
+    font-size: 1.15rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+  }
+
+  .hero .container {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  .text__container h1 {
+    font-size: 3rem;
+  }
+
+  .text__container h3 {
+    font-size: 1rem;
+    max-width: 95%;
+    margin-top: 1rem;
+  }
+
+  svg {
+    bottom: -0.5rem;
+  }
+
+  .step {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .step h5 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .container {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  .text__container h1 {
+    font-size: 2rem;
+  }
+
+  .text__container h3 {
+    font-size: 0.9rem;
+    max-width: 100%;
+    
+  }
+
+  .steps__container {
+    display: none;
+  }
 }
