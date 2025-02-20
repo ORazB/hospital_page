@@ -38,7 +38,7 @@
         <a target="_blank" href="./blogPage.html" class="nav__item hover:underline">Contact Us</a>
       </div>
 
-      <button class="justify-self-end border-1 py-3 px-7 rounded-full text-white bg-(--primary-color) cursor-pointer">Find a Doctor</button>
+      <button class="justify-self-end border-1 py-3 px-7 rounded-full text-white bg-(--primary-color) transition-all hover:scale-105 cursor-pointer">Find a Doctor</button>
     </div>
   </header>
 
@@ -197,9 +197,7 @@
         </div>
       
       </div>
-      
-
-      <button class="mt-8 border-1 py-3 px-7 rounded-full text-white bg-(--primary-color) cursor-pointer">Learn More</button>
+      <button class="mt-8 border-1 py-3 px-7 rounded-full text-white bg-(--primary-color) transition-all hover:scale-105 cursor-pointer">Learn More</button>
     </div>
   </section>
 
@@ -289,38 +287,99 @@
       </div>
     </div>
   </section>
-  
-  <section id="story" class="relative story mt-12 md:mt-24">
 
-    <div class="container mx-auto bg-[url(./assets/story-image.jpg)] bg-no-repeat bg-cover h-[500px] md:h-[625px]">
-      <div class="gradient z-0 blur-sm"></div>
-    
-    <div class="story__text p-6 md:p-10 py-10 md:py-15 grid items-center h-full relative">
+  <section id="story" class="story w-full">
+    <div class="container mx-auto mt-24 md:px-24 relative">
+      <div class="story__image">
+        <img src="assets/story-image.jpg" alt="Story Image" class="rounded-lg w-full h-[625px] object-cover">
+      </div>
 
+      <div class="story__text__container rounded-lg grid gap-8 absolute w-[40%] top-[50%] translate-y-[-50%] pl-8 py-4">
 
-      <h5 class="text-[#e3e3e3] font-semibold tracking-wide mb-2">Story #WithHorizon</h5>
-      <h1 class="text-white text-5xl tracking-wider mb-1">Bintang's Struggle</h1>
-      <h1 class="text-white text-5xl tracking-wider mb-1">Against Hereditary</h1>
-      <h1 class="text-white text-5xl tracking-wider mb-4">Kidney Disease</h1>
+        <div class="story__top__text grid gap-4">
+          <h3 class="text-gray-300 font-semibold tracking-wide">Story #WithHorizon</h3>
+          <h1 class="text-white font-normal text-6xl">Bintang's Struggle Against Hereditary Kidney Disease</h1>
+        </div>
 
-      <div class="doctor__profile flex items-center mt-3">
-        <img class="w-12 h-12 bg-white rounded-full" src="assets/doctor-img.png" alt="doctor-profile">
-        <div class="doctor__text mx-3 text-white">
-          <h5 class="font-semibold text-lg">Prof. Dr. Yogik Farhan Widyanto, SpPD-KGH</h5>
-          <p class="font-extralight text-sm">Specialist in Internal Medicine - Consultant in Kidney and Hypertension</p>
+        <div class="story__profile flex items-center gap-4">
+          <img src="assets/doctor-img.png" alt="Profile Image" class="rounded-full w-15 h-15 bg-white">
+          <div class="story__profile__text">
+            <h4 class="text-white font-bold">Prof. Dr Yogik Farhan Widyanto, SpPD-KGH</h4>
+            <p class="font-extralight text-sm text-white">Specialist in Internal Medicine - Consultant in Kidney and Hypertension</p>
+          </div>
+        </div>
+
+        <div class="story__description">
+          <p class="text-white">This disease was previously experienced by Hendra Johari (45). After experiencing a decline in kidney function due to polycystic kidney disease, he decided to undergo a kidney transplant at Siloam Hospitals Asri.</p>
+        </div>
+
+        <div class="story__button__container grid gap-2">
+          <a class="text-white" href="#">Read More <i class="bx bx-right-arrow-alt"></i></a>
+          <a class="text-white" href="#">View All Stories <i class="bx bx-right-arrow-alt"></i></a>
         </div>
       </div>
-
-      <p class="w-2/5 my-6 text-white">This disease was previously experienced by Hendra Johari (45). After experiencing a decline in kidney function due to polycystic kidney disease, he decided to undergo a kidney transplant at Siloam Hospitals Asri.</p>
-
-      <div class="story__cta text-white my-10 grid gap-3">
-        <p>Read More <i class='bx bx-right-arrow-alt'></i></p>
-        <p>View All Stories <i class='bx bx-right-arrow-alt'></i></p>
-      </div>
     </div>
+  </section>
+
+  <section id="reminder w-full" class="reminder">
+
+    <div class="container mx-auto mt-24 md:px-24 relative grid place-items-center">
+      <div class="section__text grid place-items-center">
+        <h3 class="text-center text-6xl font-bold text-(--text-color) w-[40%]">
+          Compassionate Care — Anytime, Anywhere
+        </h3>
+      </div>
+
+      <button class="default__button mt-6 px-7 py-3 bg-(--primary-color) text-white rounded-full transition-all hover:scale-105 cursor-pointer">Book an Appointment</button>
     </div>
 
   </section>
+
+  <footer class="footer py-5 mt-24" id="footer">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div>
+          <div class="footer__img mb-4">
+            <h5 class="font-bold text-2xl">Horizon Hospital</h5>
+          </div>
+          <p class="footer__text mb-3">Explore the world with ease and convenience. Wanderly is your ultimate travel
+            companion for unforgettable journeys.</p>
+          <div class="footer__social flex space-x-2">
+            <a href="#" class="social-icon"><i class='text-2xl bx bxl-facebook-circle'></i></a>
+            <a href="#" class="social-icon"><i class='text-2xl bx bxl-twitter'></i></a>
+            <a href="#" class="social-icon"><i class='text-2xl bx bxl-instagram' style='color:#ffffff' ></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="mb-3 font-semibold">Links</h4>
+          <ul class="list-none space-y-2">
+            <li><a class="font-light cursor-pointer hover:underline" href="#hero">Home</a></li>
+            <li><a class="font-light cursor-pointer hover:underline" href="#destination">Tour</a></li>
+            <li><a class="font-light cursor-pointer hover:underline" href="#why-us">Why Us</a></li>
+            <li><a class="font-light cursor-pointer hover:underline" href="#faq">FAQ</a></li>
+            <li><a class="font-light cursor-pointer hover:underline" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-3 font-semibold">Contact Us</h4>
+          <div>
+            <p class="mb-2">Email: <span>support@tourfly.com</span></p>
+            <p>Phone: +1 (800) 123-4567</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="mb-3 font-semibold">About Us</h4>
+          <div>
+            <p>Wanderly makes travel easy with exclusive deals, personalized planning, and 24/7 support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 
