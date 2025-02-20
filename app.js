@@ -22,7 +22,19 @@ var swiper = new Swiper(".blogSwiper", {
 });
 
 // Scroll Reveal
-ScrollReveal().reveal('.hero__image', { duration: 750, delay: 100, origin: "bottom", distance: "25px" });
+ScrollReveal().reveal('.hero__image', { duration: 750, delay: 200, origin: "bottom", distance: "25px" });
+
+ScrollReveal().reveal('.hero__text h1', { duration: 750, delay: 100, origin: "bottom", distance: "25px" });
+
+ScrollReveal().reveal('.hero__text p', { duration: 750, delay: 300, origin: "bottom", distance: "25px" });
+
+ScrollReveal().reveal('.hero__buttons', { duration: 750, delay: 300, origin: "bottom", distance: "25px" });
+
+ScrollReveal().reveal('.hero__info', { duration: 750, delay: 400, origin: "bottom", distance: "25px" });
+
+ScrollReveal().reveal('.section__title', { duration: 750, delay: 0, origin: "bottom", distance: "25px" });
+
+ScrollReveal().reveal('.section__description', { duration: 750, delay: 50, origin: "bottom", distance: "25px" });
 
 ScrollReveal().reveal('#value_1', { duration: 750, delay: 100, origin: "bottom", distance: "25px" });
 
